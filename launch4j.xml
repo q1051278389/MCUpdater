@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Administrator\IdeaProjects\MCUpdater\out\artifacts\MCUpdater_jar\MCUpdater.jar</jar>
+  <outfile>C:\Users\Administrator\Desktop\1.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Administrator\Desktop\myApp.ico</icon>
+  <singleInstance>
+    <mutexName>HMCLA</mutexName>
+    <windowTitle></windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>7</minVersion>
+    <maxVersion>8</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>0000</txtFileVersion>
+    <fileDescription>MCUpdater</fileDescription>
+    <copyright>Xmsoft</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>0000</txtProductVersion>
+    <productName>MCUpdater</productName>
+    <companyName></companyName>
+    <internalName>MCUpdater</internalName>
+    <originalFilename>hmcla.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>SIMPLIFIED_CHINESE</language>
+  </versionInfo>
+</launch4jConfig>

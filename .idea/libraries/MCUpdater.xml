@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MCUpdater">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/MCUpdater_jar/MCUpdater.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

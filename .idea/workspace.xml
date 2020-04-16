@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectId" id="1ac5bBSa4sby4vwEPlAa6LM7SNh" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RunManager" selected="Application.makerLaunch">
+    <configuration name="Launch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tohsaka.factory.MCUpdater.Launch" />
+      <module name="MCUpdater" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tohsaka.factory.MCUpdater.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="makerLaunch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tohsaka.factory.MCUpdater.makerLaunch" />
+      <module name="MCUpdater" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.tohsaka.factory.MCUpdater.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.makerLaunch" />
+        <item itemvalue="Application.Launch" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>

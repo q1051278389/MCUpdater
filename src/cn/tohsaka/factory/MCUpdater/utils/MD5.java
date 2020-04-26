@@ -1,8 +1,9 @@
 package cn.tohsaka.factory.MCUpdater.utils;
 
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import org.apache.commons.codec.digest.*;
 
 public class MD5 {
     private static final String[] strHex= {"0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"};
@@ -15,6 +16,17 @@ public class MD5 {
             e.printStackTrace();
         }
     }
+    public static String fromFile(File file){
+        String hash = null;
+        try {
+            hash = DigestUtils.md5Hex(new FileInputStream(file));
+        }catch (Exception e){
+            return null;
+        }
+        return hash;
+    }
+
+
     public static String getDist(String source){
         try {
             byte[] data = source.getBytes("UTF-8");

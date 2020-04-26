@@ -1,5 +1,6 @@
 {
 	"config_version":1,
-	"url":"http://127.0.0.1:8099/version.json",
+	"url":"http://127.0.0.1/version.json",
+	"downloadUrl":"http://127.0.0.1/packs/",
 	"rejects":[]
 }

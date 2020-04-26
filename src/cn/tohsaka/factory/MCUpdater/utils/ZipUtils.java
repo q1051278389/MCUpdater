@@ -43,7 +43,7 @@ public class ZipUtils {
     public void zip(String zipFileName, File inputFile, boolean isDelete) throws Exception {
         ZipOutputStream out = new ZipOutputStream(new FileOutputStream(zipFileName));
         if (!inputFile.exists()) {
-            throw new FileNotFoundException("在指定路径未找到需要压缩的文件！");
+            return;
         }
         zip(out, inputFile, "", isDelete);
         out.close();

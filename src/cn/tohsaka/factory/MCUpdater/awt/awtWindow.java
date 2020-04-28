@@ -1,5 +1,6 @@
 package cn.tohsaka.factory.MCUpdater.awt;
 
+import cn.tohsaka.factory.MCUpdater.Launch;
 import cn.tohsaka.factory.MCUpdater.utils.Env;
 import cn.tohsaka.factory.MCUpdater.utils.MB;
 import cn.tohsaka.factory.MCUpdater.utils.OkHttpDownloader;
@@ -33,6 +34,10 @@ public class awtWindow extends JFrame{
         this.setTitle("游戏文件更新");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(600,450);
+        Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (int) screensize.getWidth() / 2 - this.getWidth() / 2;
+        int y = (int) screensize.getHeight() / 2 - this.getHeight() / 2;
+        this.setLocation(x, y-50);
         this.setVisible(true);
     }
     public void startDownload(Map<String,String> needDownload, Version v){
@@ -54,7 +59,7 @@ public class awtWindow extends JFrame{
             new OkHttpDownloader(v.url+md5, Env.startpath+needDownload.get(md5)).download(new OkHttpDownloader.Callback() {
                 @Override
                 public void onProgress(long progress) {
-                    row.set(2,String.valueOf(progress)+"%");
+                    row.set(2,getDataSize(progress));
                     table.updateUI();
                 }
 
@@ -67,11 +72,15 @@ public class awtWindow extends JFrame{
                 @Override
                 public void onError(IOException ex) {
                     MB.error("更新错误,请重新打开启动器\n"+ex.getLocalizedMessage());
+                    System.exit(-1);
+
                 }
             });
 
-            table.updateUI();
+
         }
+        this.dispose();
+        Launch.onFinish();
     }
     public static String getDataSize(long size) {
         DecimalFormat formater = new DecimalFormat("####.00");

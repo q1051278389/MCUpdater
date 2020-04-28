@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Users\Administrator\IdeaProjects\MCUpdater\out\artifacts\MCUpdater_jar\MCUpdater.jar</jar>
-  <outfile>C:\Users\Administrator\Desktop\1.exe</outfile>
+  <jar>C:\Users\Administrator\IdeaProjects\MCUpdater\out\artifacts\launcher.jar\MCUpdater.jar</jar>
+  <outfile>C:\Users\Administrator\IdeaProjects\MCUpdater\HMCLA.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>C:\Users\Administrator\Desktop\myApp.ico</icon>
+  <icon>C:\Users\Administrator\IdeaProjects\MCUpdater\myApp.ico</icon>
   <singleInstance>
     <mutexName>HMCLA</mutexName>
     <windowTitle></windowTitle>

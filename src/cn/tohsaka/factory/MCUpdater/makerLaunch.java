@@ -32,12 +32,12 @@ public class makerLaunch {
         //compress config
         ZipUtils zip = new ZipUtils();
         try {
-            zip.zip(System.getProperty("user.dir")+"/HMCLA/packs/config.zip",Env.startpath+"/.minecraft/config",false);
+            zip.zip(System.getProperty("user.dir")+"/HMCLA/packs/config",Env.startpath+"/.minecraft/config",false);
         }catch (Exception e){
             MB.error(e.getMessage());
         }
         try {
-            zip.zip(System.getProperty("user.dir")+"/HMCLA/packs/scripts.zip",Env.startpath+"/.minecraft/scripts",false);
+            zip.zip(System.getProperty("user.dir")+"/HMCLA/packs/scripts",Env.startpath+"/.minecraft/scripts",false);
         }catch (Exception e){
             MB.error(e.getMessage());
         }

@@ -33,7 +33,7 @@ public class OkHttpDownloader {
             while ((numberOfBytesRead = input.read(buffer)) != - 1) {
                 fos.write(buffer, 0, numberOfBytesRead);
                 totalNumberOfBytesRead += numberOfBytesRead;
-                callback.onProgress(totalNumberOfBytesRead * 100 / fileSize);
+                callback.onProgress(totalNumberOfBytesRead);
             }
             callback.onFinish();
         } catch (IOException ex) {

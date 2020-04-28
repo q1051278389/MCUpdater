@@ -1,6 +1,6 @@
 {
 	"config_version":1,
-	"url":"http://127.0.0.1/version.json",
-	"downloadUrl":"http://127.0.0.1/packs/",
+	"url":"https://code.aliyun.com/1051278389/HMCLA-RES/raw/master/version.json",
+	"downloadUrl":"https://code.aliyun.com/1051278389/HMCLA-RES/raw/master/packs/",
 	"rejects":[]
 }

@@ -5,6 +5,7 @@ import cn.tohsaka.factory.MCUpdater.utils.Env;
 import cn.tohsaka.factory.MCUpdater.utils.MB;
 import cn.tohsaka.factory.MCUpdater.utils.OkHttpDownloader;
 import cn.tohsaka.factory.MCUpdater.utils.Version;
+import kotlin.jvm.Synchronized;
 
 import java.awt.*;
 import javax.swing.*;
@@ -18,6 +19,7 @@ import javax.swing.event.*;
 import javax.swing.table.DefaultTableModel;
 
 public class awtWindow extends JFrame{
+    int i=0;
     Vector< Vector<String> > vd = new Vector<Vector<String>>();
     JTable table = null;
     public awtWindow(){
@@ -56,28 +58,33 @@ public class awtWindow extends JFrame{
             File f = new File(Env.startpath+needDownload.get(md5));
             f.mkdirs();
             f.delete();
-            new OkHttpDownloader(v.url+md5, Env.startpath+needDownload.get(md5)).download(new OkHttpDownloader.Callback() {
+            new Thread(){
                 @Override
-                public void onProgress(long progress) {
-                    row.set(2,getDataSize(progress));
-                    table.updateUI();
+                public void run() {
+                    new OkHttpDownloader(v.url+md5, Env.startpath+needDownload.get(md5)).download(new OkHttpDownloader.Callback() {
+                        @Override
+                        public void onProgress(long progress) {
+                            row.set(2,getDataSize(progress));
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            row.set(2,"完成");
+                            vd.remove(row);
+                        }
+
+                        @Override
+                        public void onError(IOException ex) {
+                            MB.error("更新错误,请重新打开启动器\n"+ex.getLocalizedMessage());
+                            System.exit(-1);
+                        }
+                    });
                 }
-
-                @Override
-                public void onFinish() {
-                    row.set(2,"完成");
-                    table.updateUI();
-                }
-
-                @Override
-                public void onError(IOException ex) {
-                    MB.error("更新错误,请重新打开启动器\n"+ex.getLocalizedMessage());
-                    System.exit(-1);
-
-                }
-            });
-
-
+            }.start();
+        }
+        while (vd.size()>0){
+            table.updateUI();
+            continue;
         }
         this.dispose();
         Launch.onFinish();

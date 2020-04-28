@@ -20,7 +20,7 @@ public class Launch{
 
         new File(Env.startpath+"\\.minecraft\\sidemod").mkdirs();
         new File(Env.startpath+"\\.minecraft\\mods").mkdirs();
-        if(!new File(Env.startpath+"\\.minecraft\\updater.json").exists() || a[0]=="hmcldirect"){
+        if(!new File(Env.startpath+"\\.minecraft\\updater.json").exists()){
             Launcher.main(a);
             return;
         }

@@ -7,24 +7,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffe9838b-8802-45b9-9bc0-62956bc2d74b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MCUpdater_Launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MCUpdater_maker.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/HMCL_3_3_163__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/HMCL-3.3.163.jar" afterDir="false" />
+    <list default="true" id="ffe9838b-8802-45b9-9bc0-62956bc2d74b" name="Default Changelist" comment="give me code,you son of bitch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.minecraft/updater.json" beforeDir="false" afterPath="$PROJECT_DIR$/.minecraft/updater.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCUpdater.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MCUpdater.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launch4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HMCLA.exe" beforeDir="false" afterPath="$PROJECT_DIR$/HMCLA.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/launcher.jar/MCUpdater.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/launcher.jar/MCUpdater.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/maker.jar/MCUpdater.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/maker.jar/MCUpdater.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/Launch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/Launch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/makerLaunch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/makerLaunch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/utils/FSKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/utils/FSKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/awt/awtWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/awt/awtWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/awt/awtWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MCUpdater/cn/tohsaka/factory/MCUpdater/awt/awtWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/Launch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/Launch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/awt/awtWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/awt/awtWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/makerLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/makerLaunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/utils/FS.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/utils/FS.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/utils/OkHttpDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/tohsaka/factory/MCUpdater/utils/OkHttpDownloader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
